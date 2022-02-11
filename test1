@@ -1,0 +1,15 @@
+//ncr --> ncr=n!/[r!(n-r)!]
+
+var n=5,r=3;
+var nn=1,rr=1,nr=1,ncr;
+for(let x=1;x<=n;x++){
+nn=nn*x;
+} console.log(nn);
+for(let y=1;y<=r;y++){
+    rr=rr*y;
+}console.log(rr);
+for(let z=1;z<=(n-r);z++){
+nr=nr*z;
+}console.log(nr);
+ncr=nn/(rr*nr);
+console.log("NCR of "+n+" and "+r+" is "+ncr);
